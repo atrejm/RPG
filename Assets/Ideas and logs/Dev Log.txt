@@ -1,0 +1,75 @@
+This is meant to be a development log for myself to gather my thoughts and summarize my 
+learning sessions while using the Udemy RPG Core Combat Creator course.
+
+Log 7/17/2022: 
+    Having just finished the GMTK 2022 GameJam, I found myself very motivated to learn more about 
+    how to create and maintain a more scalable and robust game. 
+
+    This project is aimed at intermediate Unity students, requiring some previous knowledge of
+    the Unity engine and C# scripting.
+
+    I'll be building a RPG inspired by Diablo, Torchlight, etc. that includes Combat, Inventory 
+    management, save state structures, stats and attributes, and more
+
+    What I did:
+        Used terrain tool to create a varying terrain, height map, painting textures, painting trees
+        Used a NavMeshAgent component to traverse the terrain by setting NavMeshAgent.setDestination()
+
+    What I learned:
+        I learned about the terrain tool, which makes building an environment in unity quite easy. You
+        can add a navigation mesh to the terrain which gives any NavMeshAgent areas where they can or
+        cannot walk based on parameters set in the Navigation window which is AI -> Navigation. 
+
+        You can also use the terrain paint tools to quickly paint prefabs onto the scene, which is neat.
+
+Log 7/18/2022:
+
+    What I did:
+        Made tweaks to the NavMesh to make the mesh fidelity make more sense with the scene I built. 
+        Used Camera.ScreenPointToRay to make player go where the mouse clicks. 
+        Made the camera follow the player by creating a child of the player that only follows its
+        position, not rotation.
+
+    What I learned:
+        Nothing big. I've done more complex raycasting stuff before. The follow camera child trick is
+        kind of neat, i probably would have over-complicated it through some script.
+
+Log 7/19/2022:
+
+    What I did:
+        Updated the character to go through a series of animations with a Animation Blend Tree. Attached
+        it based on player movement speed. Also some tidying up of folders. Short day today woo.
+
+    What I learned:
+        Blend Tree animations is a new concept I haven't seen yet.
+
+Log 7/22/2022:
+
+    What I did:
+        Added more raycasting features to know when we are clicking on an enemy. Added namespaces to
+        all of our features to control dependencies.
+
+    What I learned:
+        I learned what namespaces are and why to use them. They act as a filter to control dependencies 
+        between classes, to avoid getting too spaghettified. Also learned about the 'continue' keyword, 
+        which will tell the compiler to skip the rest of that chunk of code.
+
+        Learned about short circuit operators.
+
+        Learned about interfaces. An interface is something that an object can inherit from which will
+        specify what methods are required. This allows you to pass objects of different classes as
+        a parameter, ensuring that both objects have a method with the name listed in the interface.
+                Mover.Cancel() and Fighter.Cancel()
+
+Log 7/27/2022:
+
+    What I did: 
+        - Added patrol points
+        - Enemies approach and attack the player when in range
+        - Nested prefabs to make enemies and players inherit from 'character'
+
+    What I learned:
+        Learned about using the Modulo(%) to loop a closed loop. IDK how no one has ever showed me this, but
+        you can do '(i+1)%arraySize' to get the index looped around. i.e (array[arraySize + 1] == array[0]).
+
+        Neat.

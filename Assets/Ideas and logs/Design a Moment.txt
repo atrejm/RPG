@@ -1,0 +1,17 @@
+Part 56. Design a Moment:
+
+1. Overview - One sentence
+        Player has to break into the church to rescue a priestess that has been taken hostage
+
+2. Where
+        In the small village at the outskirts of a kingdom
+
+3. What is player trying to do
+        Rescuing a priestess from the clutches of a gang of hired mercenaries. She is locked up in
+        in the back room of the town church, with a number of guards patrolling the front of the 
+        building.
+
+
+4. One meaningful choice you can give player
+        The player can either brute force in through the front door, or find a key to sneak in
+        through a side entrance
